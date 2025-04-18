@@ -55,7 +55,7 @@
             color: #4aeaff;
         }
         .hero {
-            background: url('/api/placeholder/1200/400') center/cover no-repeat;
+            background: url('Fortnite.jpg') center/cover no-repeat;
             height: 300px;
             display: flex;
             align-items: center;
