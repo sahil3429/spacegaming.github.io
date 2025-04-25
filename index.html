@@ -5,26 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Gaming - Internet Cafe</title>
     <link rel="stylesheet" href="styles.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8d7j3z5l5e5c5e5e5e5e5e5e5e5e5e5e5e5e5e" crossorigin="anonymous">
+
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo">
-                <h1>Space <span>Gaming</span></h1>
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Space <span>Gaming</span></h1>
+                </div>
+                <!-- Hamburger Button -->
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <!-- Navigation -->
+                <nav>
+                    <ul>
+                        <li><a href="#specs">Computer Specs</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#games">Games</a></li>
+                        <li><a href="#contact">Contact us</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#specs">Computer Specs</a></li>
-                    <li><a href="#games">Games</a></li>
-                    <li><a href="#  contact">Contact Us</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
+    
+    <!-- Overlay for mobile menu -->
+    <div class="overlay"></div>
 
+    <!-- Hero Video Section -->
     <div class="hero">
-        <div class="hero-content container">
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="Media/Spacegaming.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="hero-content">
             <h2>Welcome to Space Gaming</h2>
             <p>The ultimate gaming experience in town. Top-tier gaming PCs, latest games, and a cosmic atmosphere!</p>
         </div>
@@ -41,9 +62,116 @@
                     <p><strong>CPU:</strong> Intel Core i9-13900K</p>
                     <p><strong>GPU:</strong> NVIDIA RTX 4090 24GB</p>
                     <p><strong>RAM:</strong> 32GB DDR5 6000MHz</p>
-                    <p><strong>Storage:</strong> 2TB NVMe SSD</p>
-                    <p><strong>Cooling:</strong> Custom Liquid Cooling</p>
+                    <p><strong>Storage:</strong> 512GB NVMe SSD</p>
                     <p><strong>Peripherals:</strong> Mechanical RGB Keyboard, Gaming Mouse, 27" 240Hz Gaming Monitor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <div class="container">
+            <div class="section-title">
+                <h2>Guest Priser</h2>
+            </div>
+            
+            <div class="pricing-container">
+                <!-- Guest -->
+                <div class="guest-pricing">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Guest Price</h3>
+                        <div class="pricing-price">25 DKK</div>
+                        <div class="pricing-duration">per hour</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Unlimited gaming time</li>
+                        <li>Full access to high-end gaming PC</li>
+                        <li>All games included</li>
+                        <li>High-speed internet</li>
+                        <li>Comfortable gaming chair</li>
+                    </ul>
+                    <a href="#contact" class="pricing-button">Book Now</a>
+                </div>
+                </div>
+                </div>
+                </section>
+
+    <!-- Pricing Section (Without Refreshments) -->
+    <section id="pricing">
+        <div class="container">
+            <div class="section-title">
+                <h2>Medlem Priser</h2>
+            </div>
+            
+            <div class="pricing-container">
+                                
+                <!-- 5 Hours -->
+                <div class="pricing-plan">
+                    <div class="popular-tag"><strong>POPULAR</strong></div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">5 Timer Pack</h3>
+                        <div class="pricing-price">90 DKK</div>
+                        <div class="pricing-duration">full day (10 hours)</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>5 hours of gaming time</li>
+                        <li>Full access to high-end gaming PC</li>
+                        <li>All games included</li>
+                        <li>High-speed internet</li>
+                        <li>Comfortable gaming chair</li>
+                    </ul>
+                    <a href="#contact" class="pricing-button">Subscribe Now</a>
+                </div>
+                
+                <!-- 10 Hours  -->
+                <div class="pricing-plan">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">10 Timer Pack</h3>
+                        <div class="pricing-price">170 DKK</div>
+                        <div class="pricing-duration">per month</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>10 hours of gaming time</li>
+                        <li>Full access to high-end gaming PC</li>
+                        <li>All games included</li>
+                        <li>High-speed internet</li>
+                        <li>Comfortable gaming chair</li>
+                    </ul>
+                    <a href="#contact" class="pricing-button">Subscribe Now</a>
+                </div>
+
+                <!-- 20 Hours  -->
+                <div class="pricing-plan">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">20 timer Pack</h3>
+                        <div class="pricing-price">260 DKK</div>
+                        <div class="pricing-duration">One-time</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>20 hours of gaming time</li>
+                        <li>Full access to high-end gaming PC</li>
+                        <li>All games included</li>
+                        <li>High-speed internet</li>
+                        <li>Comfortable gaming chair</li>
+                    </ul>
+                    <a href="#contact" class="pricing-button">Subscribe Now</a>
+                </div>
+
+                <!-- 50 hours -->
+                <div class="pricing-plan">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">50 Hours Pack</h3>
+                        <div class="pricing-price">550 DKK</div>
+                        <div class="pricing-duration">per hour</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>50 Hours of gaming time</li>
+                        <li>Full access to high-end gaming PC</li>
+                        <li>All games included</li>
+                        <li>High-speed internet</li>
+                        <li>Comfortable gaming chair</li>
+                    </ul>
+                    <a href="#contact" class="pricing-button">Subscribe Now</a>
                 </div>
             </div>
         </div>
@@ -57,7 +185,7 @@
             <div class="games-container">
                 <div class="game-card">
                     <div class="game-image">
-                        <img src="Game Pictures/Fortnite.jpg" alt="Fortnite">
+                        <img src="Media/Fortnite.jpg" alt="Fortnite">
                     </div>
                     <div class="game-details">
                         <h3>Fortnite</h3>
@@ -67,7 +195,7 @@
 
                 <div class="game-card">
                     <div class="game-image">
-                        <img src="Game Pictures/Call Of Duty.avif" alt="Call of Duty">
+                        <img src="Media/Call Of Duty.avif" alt="Call of Duty">
                     </div>
                     <div class="game-details">
                         <h3>Call of Duty: Warzone</h3>
@@ -77,7 +205,7 @@
 
                 <div class="game-card">
                     <div class="game-image">
-                        <img src="Game Pictures/league-of-legends.webp" alt="League of Legends">
+                        <img src="Media/league-of-legends.webp" alt="League of Legends">
                     </div>
                     <div class="game-details">
                         <h3>League of Legends</h3>
@@ -87,7 +215,7 @@
 
                 <div class="game-card">
                     <div class="game-image">
-                        <img src="Game Pictures/Valorant.webp" alt="Valorant">
+                        <img src="Media/Valorant.webp" alt="Valorant">
                     </div>
                     <div class="game-details">
                         <h3>Valorant</h3>
@@ -97,7 +225,7 @@
 
                 <div class="game-card">
                     <div class="game-image">
-                        <img src="/api/placeholder/250/150" alt="CS2">
+                        <img src="Media/CS2.jpg" alt="CS2">
                     </div>
                     <div class="game-details">
                         <h3>Counter-Strike 2</h3>
@@ -107,7 +235,7 @@
 
                 <div class="game-card">
                     <div class="game-image">
-                        <img src="/api/placeholder/250/150" alt="Apex Legends">
+                        <img src="Media/Apex Legends.webp" alt="Apex Legends">
                     </div>
                     <div class="game-details">
                         <h3>Apex Legends</h3>
@@ -117,7 +245,7 @@
 
                 <div class="game-card">
                     <div class="game-image">
-                        <img src="/api/placeholder/250/150" alt="Dota 2">
+                        <img src="Media/Dota2.webp" alt="Dota 2">
                     </div>
                     <div class="game-details">
                         <h3>Dota 2</h3>
@@ -127,11 +255,11 @@
 
                 <div class="game-card">
                     <div class="game-image">
-                        <img src="/api/placeholder/250/150" alt="Minecraft">
+                        <img src="Media/world of warcraft 3.jpg" alt="world of warcraft 3">
                     </div>
                     <div class="game-details">
-                        <h3>Minecraft</h3>
-                        <p>Creative sandbox with endless building possibilities.</p>
+                        <h3>World of warcraft 3</h3>
+                        <p>A complete reimagining of a real-time strategy classic</p>
                     </div>
                 </div>
             </div>
@@ -143,7 +271,7 @@
             <div class="section-title">
                 <h2>Contact Us</h2>
             </div>
-            <div class="contact-container">
+           <!-- <div class="contact-container">
                 <form class="contact-form">
                     <div class="form-group">
                         <label for="name">Name</label>
@@ -158,17 +286,17 @@
                         <textarea id="message" placeholder="Your Message"></textarea>
                     </div>
                     <button type="submit" class="submit-btn">Send Message</button>
-                </form>
+                </form>-->
 
                 <div class="social-links">
-                    <a href="https://instagram.com/spacegaming" target="_blank" title="Instagram">
+                    <a href="https://www.instagram.com/space_gaming_frb/" target="_blank" title="Instagram">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                             <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                         </svg>
                     </a>
-                    <a href="https://facebook.com/spacegaming" target="_blank" title="Facebook">
+                    <a href="https://www.facebook.com/Spacegaming2020/" target="_blank" title="Facebook">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                         </svg>
@@ -183,5 +311,38 @@
             <p>&copy; 2025 Space Gaming Internet Cafe. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Mobile menu script
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const nav = document.querySelector('nav');
+            const overlay = document.querySelector('.overlay');
+            
+            // Toggle menu when hamburger is clicked
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                nav.classList.toggle('active');
+                overlay.classList.toggle('active');
+            });
+            
+            // Close menu when clicking outside
+            overlay.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+                overlay.classList.remove('active');
+            });
+            
+            // Close menu when clicking on a nav link
+            const navLinks = document.querySelectorAll('nav ul li a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    hamburger.classList.remove('active');
+                    nav.classList.remove('active');
+                    overlay.classList.remove('active');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
